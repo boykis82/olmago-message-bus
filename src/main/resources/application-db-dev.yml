@@ -1,0 +1,10 @@
+spring:
+  config:
+    activate:
+      on-profile: db-dev
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/olmago_contract
+    username: olmago
+    password: olmago
+    driver-class-name: com.mysql.cj.jdbc.Driver

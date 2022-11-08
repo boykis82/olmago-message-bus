@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    group:
+      "dev": "kafka-dev,db-dev,app-dev"
+      "prod": "kafka-prod,db-prod,app-prod"
+
+spring.cloud.stream:
+  defaultBinder: kafka
+  default.contentType: application/json

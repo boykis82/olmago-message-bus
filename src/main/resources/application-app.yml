@@ -1,0 +1,12 @@
+spring.cloud.stream:
+  bindings:
+    contract-event-0:
+      destination: contract-event-topic
+      producer:
+        required-groups: auditGroup
+
+spring:
+  profiles:
+    group:
+      "app-dev": "app"
+      "app-prod": "app"
