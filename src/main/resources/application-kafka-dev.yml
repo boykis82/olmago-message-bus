@@ -11,5 +11,3 @@ spring.cloud.stream:
       brokers: 127.0.0.1
       defaultBrokerPort: 9093
       replication-factor: 1
-
-  default.contentType: application/json

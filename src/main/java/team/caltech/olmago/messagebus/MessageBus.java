@@ -1,5 +1,7 @@
 package team.caltech.olmago.messagebus;
 
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.support.MessageBuilder;
@@ -10,6 +12,8 @@ import team.caltech.olmago.common.message.MessageEnvelopeRepository;
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Slf4j
+@RequiredArgsConstructor
 @Service
 public class MessageBus {
   public static final String HEADER_MESSAGE_NAME = "message-name";

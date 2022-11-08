@@ -16,7 +16,12 @@ ext {
     springCloudVersion = "2021.0.3"
 }
 
+// git submodule add <submodule-url>
+// git submodule update --remote olmago-common
+
 dependencies {
+    implementation project(':olmago-common')
+
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
     implementation 'io.projectreactor:reactor-core'
